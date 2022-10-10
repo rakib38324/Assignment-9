@@ -3,6 +3,7 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './components/Main/Main';
 import Header from './components/Header/Header';
+import Body from './components/Body/Body';
 
 
 function App() {
@@ -12,10 +13,14 @@ function App() {
       path:'/',
       element:<Main></Main>,
       children: [
-        {
-          path: '/',
-          element: <Header></Header>
-        }
+        
+        { 
+          path: '/', 
+          loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz')
+          },
+          element: <Header></Header> }
+        
       ]
     }
   ])
