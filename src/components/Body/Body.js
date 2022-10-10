@@ -12,7 +12,7 @@ const Body = ({topic}) => {
                 <div className='lg:text-3xl lg:pr-32'>
                 <h1 className="pb-5 text-4xl  text-indigo-900 font-extrabold">{name}</h1>
                 <p className="pb-5">Total Quiz number: {total}</p>
-                <button className="bg-cyan-500 hover:bg-cyan-900 p-4 rounded-lg">
+                <button className="bg-cyan-500 hover:bg-cyan-900 hover:text-white p-4 rounded-lg">
                     Start Practice
                     <FontAwesomeIcon className="pl-4" icon={faArrowRight}></FontAwesomeIcon>
                     </button>
