@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 
 const Body = ({topic}) => {
-    const {name,logo,total} = topic;
+    const {name,logo,total,id} = topic;
     
     return (
         <div>
@@ -12,9 +13,10 @@ const Body = ({topic}) => {
                 <div className='lg:text-3xl lg:pr-32'>
                 <h1 className="pb-5 text-4xl  text-indigo-900 font-extrabold">{name}</h1>
                 <p className="pb-5">Total Quiz number: {total}</p>
-                <button className="bg-cyan-500 hover:bg-cyan-900 hover:text-white p-4 rounded-lg">
-                    Start Practice
-                    <FontAwesomeIcon className="pl-4" icon={faArrowRight}></FontAwesomeIcon>
+                <button  className="bg-cyan-500 hover:bg-cyan-900 hover:text-white p-4 rounded-lg">
+                    
+                    <Link to = {`topics/${id}`}>Start Practice <FontAwesomeIcon className="pl-4" icon={faArrowRight}></FontAwesomeIcon></Link>
+                    
                     </button>
                 </div>
             </div>
