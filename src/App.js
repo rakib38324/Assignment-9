@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import Topics from './components/Topics/Topics';
 import React from 'react';
 import Quiz from './components/Quiz/Quiz';
+import Statistics from './components/Statistics/Statistics';
 
 
 
@@ -39,11 +40,20 @@ function App() {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
           },
           element: <Quiz></Quiz>
+        },
+        {
+          path:'/statistics',
+          element: <Statistics></Statistics>
         }
       ]
     },
+
+
     {path: '*', element: <div className='text-6xl mt-52'> <span className='text-red-600 font-bold'>404</span> This page not found</div>}
   ])
+
+
+  
   return (
     <div className="App">
       <RouterProvider router = {router}></RouterProvider>
