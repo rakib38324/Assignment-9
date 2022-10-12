@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+# Gaming With Quiz
+This a small assignment. In this website we can participate the core concept of webdevolapment quiz. The topics are React,JaveScript,Css and Git. Also we can show the chart with total quiz number. We can see that website it doesn't reload when you change the page or go to the another optin.
+# Live Website Link
+https://game-with-quiz.netlify.app/
+
+# What is the main feature ?
+In this website we can participate the quiz of React, JavaScript, Css and Git.
+The main feature are_
+
+1. You can open topic section click the quiz section. It doesn't load the page.
+2. You chooseyour option and within one second you can see your asnwer is correct or wrong.
+3. If your anser is wrong you can clikc the Eye button and you see the correct answer.
+4. At the same time phone verstion is available.  
+
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
