@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useLoaderData } from 'react-router-dom';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const Statistics = () => {
-    // const data = useLoaderData();
-    // console.log(data.data);
-    // const topics = data.tata;
+    
 
     const [topic, settopic] = useState();
     
@@ -37,7 +34,7 @@ const Statistics = () => {
                 <div>
                     <p className='mt-5 text-4xl font-extrabold text-indigo-600 underline'>This is the Statistics with total Quiz number</p>
                 </div>
-                <BarChart className='m-auto' width={1200} height={800} data={topic} 
+                <BarChart className='m-auto' width={350} height={500} data={topic} 
             margin={{
               top: 100,
               right: 0,

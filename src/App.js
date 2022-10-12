@@ -7,6 +7,7 @@ import Topics from './components/Topics/Topics';
 import React from 'react';
 import Quiz from './components/Quiz/Quiz';
 import Statistics from './components/Statistics/Statistics';
+import Blogs from './components/Blogs/Blogs';
 
 
 
@@ -44,6 +45,10 @@ function App() {
         {
           path:'/statistics',
           element: <Statistics></Statistics>
+        },
+        {
+          path:'/blogs',
+          element: <Blogs></Blogs>
         }
       ]
     },

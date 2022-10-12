@@ -13,7 +13,7 @@ const Quizlayout = ({ topic }) => {
     const realquestion = replace.replace("</p>", "");
 
     const ToastAnswer = () => {
-        toast(`${correctAnswer
+        toast(`The Correct Answer is: ${correctAnswer
             }`, {
             position: "top-center"
         });
