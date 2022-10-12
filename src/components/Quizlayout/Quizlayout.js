@@ -27,7 +27,7 @@ const Quizlayout = ({ topic }) => {
             });
         }
         else {
-            toast(`Sorry Your Answer is Wrong`, {
+            toast(`Sorry... Your Answer is Wrong`, {
                 position: "top-center"
             });
         }
