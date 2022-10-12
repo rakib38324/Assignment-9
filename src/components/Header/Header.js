@@ -14,12 +14,17 @@ const Header = () => {
                         <img className='sm:m-auto sm:w-80 w-50' src={img} alt="" />
                     </div>
                     <div className='sm:text-3xl sm:m-auto'>
-                        <p className='text-3xl underline font-extrabold'>Welcome to Gaming Quiz Website</p>
-                        <p className='font-bold'>Some Instructions</p>
+                        <p className='text-5xl text-blue-900 pb-6 font-extrabold'>Welcome to Gaming Quiz Website</p>
+                        <p className='text-4xl font-bold text-sky-900 underline'>Some Instructions</p>
 
+                        <div className=' text-2xl text-sky-900'>
                         <ul>Don't search Google</ul>
+                        <ul>Don't take any others help</ul>
+                        <ul>Don't close window tab</ul>
+                        
                         <ul>Don't open any other source</ul>
-                        <ul>Don't close window</ul>
+                        
+                        </div>
                     </div>
                 </div>
             </header>
