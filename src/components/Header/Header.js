@@ -9,15 +9,17 @@ const Header = () => {
     return (
         <div>
             <header>
-                <div className='bg-blue-100   lg:flex justify-around items-center '>
+                <div className='bg-blue-100 m-auto sm:grid grid-cols-2 gap-2 '>
                     <div className='pt-4'>
-                        <img className='  lg:w-80' src={img} alt="" />
+                        <img className='sm:m-auto sm:w-80 w-50' src={img} alt="" />
                     </div>
-                    <div className='text-3xl '>
-                        <p className='text-5xl underline font-extrabold'>Some Instructions</p>
-                        <p>Don't search Google</p>
-                        <p>Don't open any other source</p>
-                        <p>Don't close window</p>
+                    <div className='sm:text-3xl sm:m-auto'>
+                        <p className='text-3xl underline font-extrabold'>Welcome to Gaming Quiz Website</p>
+                        <p className='font-bold'>Some Instructions</p>
+
+                        <ul>Don't search Google</ul>
+                        <ul>Don't open any other source</ul>
+                        <ul>Don't close window</ul>
                     </div>
                 </div>
             </header>
